@@ -1,11 +1,13 @@
 ### TODO
 - [ ] Implementation
-    - [x] Set up Next.js ("hello world" page)
-    - [ ] Make it look decent
+  - [x] Set up Next.js ("hello world" page)
+  - [ ] Make it look decent
 - [ ] Deployment
-    - [ ] Set up Vercel deployments from github (free domain name)
+  - [ ] Set up Vercel deployments from github (free domain name)
 - [ ] Publishing
-    - [ ] Get a domain name
-    - [ ] Set it up (Cloudflare DNS)
+  - [ ] Get a domain name
+  - [ ] Set it up (Cloudflare DNS)
+- [ ] Improvements
+  - [ ] Change favicon
 - [ ] Work on some projects etc.
-    - [ ] ...
+  - [ ] ...
