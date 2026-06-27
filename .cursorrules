@@ -19,5 +19,6 @@ Each project gets its own `<name>.mywebsite.com` DNS record pointing at wherever
 
 ## Coding conventions
 
+- See @AGENTS.md for Next.js conventions
 - TypeScript strict mode
 - Functional React components only
