@@ -1,0 +1,23 @@
+# Portfolio Website
+
+A personal portfolio site deployed on Vercel, serving as the entry point / link hub for various projects.
+
+## Architecture
+
+- **Portfolio** (`mywebsite.com`, `www.mywebsite.com`) — static/SSG Next.js site on Vercel.
+- **Projects** — each hosted independently (Vercel, VPS, Cloudflare Pages, etc.) and reachable via its own subdomain (`project.mywebsite.com`). The portfolio links out to them; it does not proxy them.
+- **DNS** — Cloudflare (host-agnostic, CNAME flattening at apex, easy per-subdomain routing).
+
+## Stack
+
+- Framework: Next.js (deployed via Vercel Git integration)
+- Language: TypeScript
+
+## Per-project subdomain pattern
+
+Each project gets its own `<name>.mywebsite.com` DNS record pointing at wherever that project is hosted. Adding a project = add DNS record + add a card/link on the portfolio page. Projects are fully independent.
+
+## Coding conventions
+
+- TypeScript strict mode
+- Functional React components only
