@@ -1,7 +1,7 @@
 ### TODO
-- [ ] Implementation
+- [x] Implementation
   - [x] Set up Next.js ("hello world" page)
-  - [ ] Make it look decent
+  - [x] Make it look decent
 - [ ] Deployment
   - [ ] Set up Vercel deployments from github (free domain name)
 - [ ] Publishing
