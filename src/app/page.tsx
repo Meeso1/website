@@ -1,6 +1,8 @@
+"use client";
+
 import AboutMeCard from "@/components/about-me-card";
 import Background from "@/components/background";
-import ProjectCard from "@/components/project-card";
+import ProjectCarousel from "@/components/project-carousel";
 
 export default function Home() {
   return (
@@ -8,15 +10,13 @@ export default function Home() {
       <Background />
       <div className="flex w-full h-full">
         <div className="flex w-1/2 h-full items-center justify-center">
-          <AboutMeCard className="w-3/4 h-[75vh] bg-gray-800" />
+          <AboutMeCard className="w-4/5 h-[80vh] bg-gray-800" />
         </div>
         <div className="flex w-1/2 h-full items-center justify-center">
-          <ProjectCard 
-            title="Project 1" 
-            description="Project 1 description" 
-            link="https://www.google.com" 
-            className="w-1/2 h-[50vh] bg-gray-800" 
-          />
+          <ProjectCarousel projects={[
+            { title: "No projects yet...", description: "This is just a placeholder for now.", link: "https://www.google.com" },
+            { title: "Still no projects...", description: "This is also a placeholder.", link: "https://www.google.com" },
+          ]} className="w-2/3 h-[50vh]" />
         </div>
       </div>
     </div>

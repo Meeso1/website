@@ -12,15 +12,17 @@ import LinkButton from "./link-button"
 
 export default function AboutMeCard({ className }: { className?: string }) {
   return (
-    <Card className={cn("w-full max-w-sm", className)}>
+    <Card className={cn("w-full max-w-sm glass text-white", className)}>
       <CardHeader>
         <CardTitle>About Me</CardTitle>
       </CardHeader>
       <CardContent>
-        TODO: about me content
+        I'm a backend dev who currently only codes at work. 
+        To change that, I'll be creating random small projects and publishing them here, while also learning some fullstack.
+        New stuff will show up here (ir)regularly.
       </CardContent>
       <CardFooter className="flex-col gap-2">
-        <LinkButton href="https://github.com/Meeso1">GitHub</LinkButton>
+        <LinkButton href="https://github.com/Meeso1">Meeso1 @ GitHub</LinkButton>
       </CardFooter>
     </Card>
   )

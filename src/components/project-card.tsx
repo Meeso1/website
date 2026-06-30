@@ -12,7 +12,7 @@ export default function ProjectCard(
     { title, description, link, className }: { title: string, description: string, link: string, className?: string }
 ) {
   return (
-    <Card className={cn("w-full max-w-sm", className)}>
+    <Card className={cn("w-full max-w-sm glass text-white", className)}>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>

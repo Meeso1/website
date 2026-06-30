@@ -128,3 +128,22 @@
     @apply font-sans;
   }
 }
+
+@utility glass {
+  background: color-mix(in oklch, var(--card) 75%, transparent);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  outline: 2px solid oklch(1 0 0 / 0.35);
+  outline-offset: -4px;
+  box-shadow:
+    0 8px 30px -10px oklch(0 0 0 / 0.2),
+    inset 0 1px 0 0 oklch(1 0 0 / 0.15);
+
+  --card: oklch(0.4467 0.2116 314.05);
+
+  @media (prefers-reduced-transparency: reduce) {
+    background: var(--card);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
